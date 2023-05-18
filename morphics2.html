@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>Glassmorphism effect</title>
+</head>
+<body>
+  <!--<img class="shape" src="https://s3.us-east-2.amazonaws.com/ui.glass/shape.svg" alt="">-->
+  <style type="text/css">
+  body {
+    /*background: url(https://images.unsplash.com/photo-1544306094-e2dcf9479da3) no-repeat;*/
+    background: url(images/back3.webp);
+    
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    display: grid;
+  }
+  .container{
+    width: 70%;
+    height: 99vh;
+    left: 15%;
+    right: 15%;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+    padding: 10px;
+    font-family: monospace;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    bottom: 40px;
+    color: #fff;
+    /*font-weight: 700;*/
+    /*letter-spacing: 1px;*/
+    font-family: 'monospace', monospace;
+  }
+  .container:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+    filter: blur(10px);
+    background: inherit;
+    z-index: -1;
+    margin: -20px;
+
+
+  }
+  nav{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+  }
+  .logo{
+    width: 50px;
+    height: 50px;
+    float: left;
+    cursor: pointer;
+    left: -5px;
+
+  }
+  .cart-icon{
+    width: 30px;
+    cursor: pointer;
+
+  }
+  nav ul {
+    flex: 1;
+    text-align: right;
+    padding: 30px;
+  }
+  nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+
+  }
+  nav ul li a{
+    color: #fff;
+    text-decoration: none;
+
+    position: relative;
+  }
+  nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 4px;
+    position: absolute;
+    bottom: -6px;
+    left: 48%;
+    transform: translateX(-48%);
+    background: #fff;
+    transition: width 0.3s;
+  }
+  nav ul li a:hover::after{
+    width: 48%;
+  }
+  .dep{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: bold;
+    font-family: 'Work sans', sans-serif;
+    background: url(images/dark3.jpg);
+    /*background-repeat: no-repeat;*/
+  }
+  .container p{
+    font-size: 17px;
+  }
+  .botm{
+    right: ;
+  }
+  .end{
+    height: 40px;
+
+  }
+  h1{
+    color: #000;
+  }
+  .imag{
+    height: 26px;
+    width: 39px;
+    wi
+  }
+  .socials{
+    position: absolute;
+    right: 15%;
+    display: flex;
+    bottom: 3%;
+  }
+  .socials img{
+    width: 20px;
+    display: block;
+    flex-wrap: wrap;
+    margin: 10px 5px ;
+
+  }
+
+</style>
+<nav>
+    <!--<img src="images/kb2.jpg" class="logo">-->
+    <ul>
+      
+      <li><a href="#">Home</a></li>
+      <li><a href="">Location</a></li>
+      <li><a href=""><img class="imag" id = "immag" src="images/404.jpg"></a></li>
+      
+    </ul>
+    <!--<img src="images/cart-icon.png" class="cart-icon"> -->
+
+  </nav>
+<div class="container">
+
+  <h1> INDUSTRIAL ATTACHMENT.</h1>
+  <h2>Intro</h2>
+  <p>Industrial attachment aims at equipping students with practical experience and skills required in a certain field. Students' exposure to demands and challenges of a work  place is necessary and not to be left out.</p>
+  <p class="dep">Skills and expectations</p>
+  <p>Two years now in the field of programming and finding solutions to real-world problems related to software development. Looking back, all that can be said is, it has been quite a ride. There came C language, there came the object-oriented languages as C++ and java. That was not all. Worse or better yet, I had to handle Java and Python altogether. Thereafter, web development found it way through. Afterwards Python took over with a little light-shining on machine learning and data analysis. The acquisition of skills has been commendable. Though the beginning seemed small and easily despisable, the progress has been good, fairly good. 
+  Here's how I grade my skills in the so taken languages.
+  | Java- 24% |C- 30%| |C++ - 28%| |Python - 36%| |HTML- 70%| |CSS - 50%| |Javascript - 18%|. High hopes I have that I will expand my knowledge so as to gain a competitive advantage in the field.</p><br><hr>
+  <p>My expectations is that I will be able to get to know the whats and hows I require in the field as I near entry into the real-world. I also look forward to getting to know what is good for me (the direction I ought to take in terms of specialization of languages).</p><br>
+  <div class="socials">
+    <a href="https://www.linkedin.com/in/cyrus-kairu-283125277/"><img src="images/inn.png"></a>
+    <a href="instagram.com/tensor_101"><img src="images/insta.png"></a>
+    <a href="github.com/Kairucyrus"><img src="images/github.png"></a>
+  </div>
+</div>
+<div class="end"></div>
+</body>
+</html>
